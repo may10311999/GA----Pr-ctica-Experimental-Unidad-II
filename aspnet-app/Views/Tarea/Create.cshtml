@@ -1,0 +1,33 @@
+@model aspnet_app.Models.Tarea
+@{
+    ViewData["Title"] = "Crear Tarea";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form method="post" asp-action="Create" class="form-crud">
+    @Html.AntiForgeryToken()
+
+    <div class="campo">
+        <label asp-for="Titulo"></label>
+        <input asp-for="Titulo" class="form-control" required minlength="3" maxlength="200" />
+        <span asp-validation-for="Titulo" class="text-danger"></span>
+    </div>
+
+    <div class="campo">
+        <label asp-for="Descripcion"></label>
+        <textarea asp-for="Descripcion" class="form-control" rows="5" maxlength="1000"></textarea>
+        <span asp-validation-for="Descripcion" class="text-danger"></span>
+    </div>
+
+    <div asp-validation-summary="ModelOnly" class="mensaje error"></div>
+
+    <div class="acciones-form">
+        <button type="submit" class="btn">Guardar Tarea</button>
+        <a asp-action="Index" class="btn btn-secundario">Cancelar</a>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

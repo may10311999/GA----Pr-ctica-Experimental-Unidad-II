@@ -1,0 +1,56 @@
+@model IEnumerable<aspnet_app.Models.Tarea>
+@{
+    ViewData["Title"] = "Mis Tareas";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div class="acciones-tabla">
+    <a asp-action="Create" class="btn">Nueva Tarea</a>
+</div>
+
+@if (!Model.Any())
+{
+    <p class="sin-datos">No tienes tareas registradas. Crea tu primera tarea.</p>
+}
+else
+{
+    <table>
+        <thead>
+            <tr>
+                <th>Titulo</th>
+                <th>Estado</th>
+                <th>Fecha Creacion</th>
+                <th>Acciones</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var t in Model)
+            {
+                <tr>
+                    <td>@t.Titulo</td>
+                    <td>
+                        <span class="estado estado-@t.Estado">
+                            @switch (t.Estado)
+                            {
+                                case "pendiente": <text>Pendiente</text>; break;
+                                case "en_progreso": <text>En Progreso</text>; break;
+                                case "completada": <text>Completada</text>; break;
+                                default: @t.Estado; break;
+                            }
+                        </span>
+                    </td>
+                    <td>@t.FechaCreacion.ToString("yyyy-MM-dd HH:mm")</td>
+                    <td class="acciones">
+                        <a asp-action="Edit" asp-route-id="@t.Id" class="btn-small">Editar</a>
+                        <form asp-action="Delete" asp-route-id="@t.Id" method="post" style="display:inline">
+                            @Html.AntiForgeryToken()
+                            <button type="submit" class="btn-small btn-peligro"
+                                    onclick="return confirm('Eliminar esta tarea?')">Eliminar</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}

@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Inicio";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Gestor de Tareas</h1>
+    <p class="lead">Aplicacion web segura desarrollada con ASP.NET Core y Entity Framework.</p>
+    @if (User.Identity?.IsAuthenticated == true)
+    {
+        <a asp-controller="Tarea" asp-action="Index" class="btn btn-primary btn-lg mt-3">Ir a Mis Tareas</a>
+    }
+    else
+    {
+        <div class="mt-4">
+            <a asp-controller="Account" asp-action="Login" class="btn btn-primary btn-lg me-2">Iniciar Sesion</a>
+            <a asp-controller="Account" asp-action="Registro" class="btn btn-secondary btn-lg">Registrarse</a>
+        </div>
+    }
+</div>

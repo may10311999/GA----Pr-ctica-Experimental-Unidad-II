@@ -1,0 +1,43 @@
+@model aspnet_app.Models.Tarea
+@{
+    ViewData["Title"] = "Editar Tarea";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form method="post" asp-action="Edit" asp-route-id="@Model.Id" class="form-crud">
+    @Html.AntiForgeryToken()
+    <input type="hidden" asp-for="Id" />
+
+    <div class="campo">
+        <label asp-for="Titulo"></label>
+        <input asp-for="Titulo" class="form-control" required minlength="3" maxlength="200" />
+        <span asp-validation-for="Titulo" class="text-danger"></span>
+    </div>
+
+    <div class="campo">
+        <label asp-for="Descripcion"></label>
+        <textarea asp-for="Descripcion" class="form-control" rows="5" maxlength="1000"></textarea>
+        <span asp-validation-for="Descripcion" class="text-danger"></span>
+    </div>
+
+    <div class="campo">
+        <label asp-for="Estado"></label>
+        <select asp-for="Estado" class="form-control">
+            <option value="pendiente">Pendiente</option>
+            <option value="en_progreso">En Progreso</option>
+            <option value="completada">Completada</option>
+        </select>
+    </div>
+
+    <div asp-validation-summary="ModelOnly" class="mensaje error"></div>
+
+    <div class="acciones-form">
+        <button type="submit" class="btn">Actualizar Tarea</button>
+        <a asp-action="Index" class="btn btn-secundario">Cancelar</a>
+    </div>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

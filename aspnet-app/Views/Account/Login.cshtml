@@ -1,0 +1,29 @@
+@{
+    ViewData["Title"] = "Iniciar Sesion";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<form method="post" asp-action="Login" class="form-auth">
+    @Html.AntiForgeryToken()
+
+    <div class="campo">
+        <label for="email">Correo Electronico:</label>
+        <input type="email" id="email" name="email" required class="form-control" />
+    </div>
+
+    <div class="campo">
+        <label for="password">Contrasena:</label>
+        <input type="password" id="password" name="password" required class="form-control" />
+    </div>
+
+    <div asp-validation-summary="All" class="mensaje error"></div>
+
+    <button type="submit" class="btn">Iniciar Sesion</button>
+
+    <p class="enlace-form">No tienes cuenta? <a href="@Url.Action("Registro", "Account")">Registrate aqui</a></p>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

@@ -1,0 +1,30 @@
+# PHP
+php-app/aplicacion.db
+php-app/aplicacion.db-shm
+php-app/aplicacion.db-wal
+*.log
+
+# .NET
+aspnet-app/bin/
+aspnet-app/obj/
+aspnet-app/aplicacion.db
+aspnet-app/aplicacion.db-shm
+aspnet-app/aplicacion.db-wal
+*.user
+*.suo
+*.cache
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.pyc
+
+# Word
+*.docx
+~$*.docx
+
+# Python script de generacion de informe
+generar_informe.py
