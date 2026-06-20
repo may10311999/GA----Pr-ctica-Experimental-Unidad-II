@@ -7,7 +7,7 @@ class BaseDeDatos {
     private function __construct() {
         $host = '127.0.0.1';
         $port = '5432';
-        $dbname = 'gestor_tareas';
+        $dbname = 'control_actividades';
         $usuario = 'postgres';
         $password = 'Osito123.';
 

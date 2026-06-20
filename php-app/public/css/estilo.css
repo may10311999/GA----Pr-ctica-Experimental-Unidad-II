@@ -2,8 +2,8 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #faf0f5;
-    color: #5a4d4d;
+    background-color: #f5f2f0;
+    color: #4d4a47;
     line-height: 1.6;
     min-height: 100vh;
     display: flex;
@@ -11,10 +11,10 @@ body {
 }
 
 header {
-    background: #d4b5c5;
-    color: #5a4d4d;
+    background: #b8c9d0;
+    color: #4d4a47;
     padding: 1rem 0;
-    box-shadow: 0 2px 8px rgba(212, 181, 197, 0.3);
+    box-shadow: 0 2px 8px rgba(184, 201, 208, 0.3);
 }
 
 .nav-inner {
@@ -27,7 +27,7 @@ header {
 }
 
 .nav-inner .logo {
-    color: #5a4d4d;
+    color: #4d4a47;
     text-decoration: none;
     font-size: 1.4rem;
     font-weight: bold;
@@ -41,31 +41,30 @@ header {
 }
 
 .nav-inner ul li a {
-    color: #5a4d4d;
+    color: #4d4a47;
     text-decoration: none;
     padding: 0.5rem 0.8rem;
     border-radius: 20px;
-    transition: background 0.3s;
 }
 
 .nav-inner ul li a:hover {
-    background: #c4a5b5;
+    background: #a0b5c0;
 }
 
 .usuario-info {
-    color: #7a6a6a;
+    color: #7a706a;
     font-size: 0.9rem;
 }
 
 .btn-cerrar {
-    background: #e8b4b4;
-    color: #5a4d4d !important;
+    background: #e0c8b8;
+    color: #4d4a47 !important;
     padding: 0.4rem 0.8rem !important;
     border-radius: 20px !important;
 }
 
 .btn-cerrar:hover {
-    background: #d4a0a0 !important;
+    background: #d0b4a0 !important;
 }
 
 main {
@@ -79,17 +78,17 @@ main {
 }
 
 h2 {
-    color: #5a4d4d;
+    color: #4d4a47;
     margin-bottom: 1.5rem;
     padding-bottom: 0.5rem;
-    border-bottom: 2px solid #e8d5e0;
+    border-bottom: 2px solid #d5dce0;
 }
 
 .form-auth, .form-crud {
-    background: #fffafa;
+    background: #fcfaf8;
     padding: 2rem;
     border-radius: 16px;
-    box-shadow: 0 4px 15px rgba(212, 181, 197, 0.15);
+    box-shadow: 0 4px 15px rgba(184, 201, 208, 0.15);
     max-width: 500px;
     margin: 0 auto;
 }
@@ -106,7 +105,7 @@ h2 {
     display: block;
     margin-bottom: 0.4rem;
     font-weight: 600;
-    color: #5a4d4d;
+    color: #4d4a47;
 }
 
 .campo input,
@@ -114,19 +113,18 @@ h2 {
 .campo select {
     width: 100%;
     padding: 0.7rem;
-    border: 1px solid #e8d5e0;
+    border: 1px solid #d5dce0;
     border-radius: 10px;
     font-size: 1rem;
-    background: #fffafa;
-    transition: border-color 0.3s, box-shadow 0.3s;
+    background: #fcfaf8;
 }
 
 .campo input:focus,
 .campo textarea:focus,
 .campo select:focus {
     outline: none;
-    border-color: #d4b5c5;
-    box-shadow: 0 0 8px rgba(212, 181, 197, 0.3);
+    border-color: #b8c9d0;
+    box-shadow: 0 0 8px rgba(184, 201, 208, 0.3);
 }
 
 .contenedor-password {
@@ -141,24 +139,23 @@ h2 {
 
 .toggle-password {
     background: none;
-    border: 1px solid #e8d5e0;
+    border: 1px solid #d5dce0;
     border-radius: 10px;
     padding: 0.5rem 0.6rem;
     cursor: pointer;
-    font-size: 1.1rem;
+    font-size: 0.9rem;
     line-height: 1;
-    transition: background 0.2s;
     flex-shrink: 0;
 }
 
 .toggle-password:hover {
-    background: #f0e5ea;
+    background: #e8edf0;
 }
 
 .btn {
     display: inline-block;
-    background: #d4b5c5;
-    color: #5a4d4d;
+    background: #b8c9d0;
+    color: #4d4a47;
     border: none;
     padding: 0.7rem 1.5rem;
     border-radius: 20px;
@@ -166,44 +163,41 @@ h2 {
     font-size: 1rem;
     font-weight: 600;
     text-decoration: none;
-    transition: background 0.3s, transform 0.1s;
 }
 
 .btn:hover {
-    background: #c4a5b5;
-    transform: translateY(-1px);
+    background: #a0b5c0;
 }
 
 .btn-secundario {
-    background: #c5b5d4;
+    background: #c4d4b8;
 }
 
 .btn-secundario:hover {
-    background: #b5a5c4;
+    background: #b0c4a0;
 }
 
 .btn-small {
     display: inline-block;
-    background: #d4b5c5;
-    color: #5a4d4d;
+    background: #b8c9d0;
+    color: #4d4a47;
     padding: 0.3rem 0.7rem;
     border-radius: 12px;
     font-size: 0.85rem;
     font-weight: 600;
     text-decoration: none;
-    transition: background 0.3s;
 }
 
 .btn-small:hover {
-    background: #c4a5b5;
+    background: #a0b5c0;
 }
 
 .btn-peligro {
-    background: #e8b4b4;
+    background: #e0c8b8;
 }
 
 .btn-peligro:hover {
-    background: #d4a0a0;
+    background: #d0b4a0;
 }
 
 .acciones-form {
@@ -219,17 +213,17 @@ h2 {
 .enlace-form {
     margin-top: 1rem;
     text-align: center;
-    color: #7a6a6a;
+    color: #7a706a;
 }
 
 .enlace-form a {
-    color: #b8a9c9;
+    color: #8fa8b8;
     font-weight: 600;
     text-decoration: none;
 }
 
 .enlace-form a:hover {
-    color: #a899b9;
+    color: #7a94a8;
     text-decoration: underline;
 }
 
@@ -262,25 +256,25 @@ h2 {
 table {
     width: 100%;
     border-collapse: collapse;
-    background: #fffafa;
+    background: #fcfaf8;
     border-radius: 16px;
     overflow: hidden;
-    box-shadow: 0 4px 15px rgba(212, 181, 197, 0.15);
+    box-shadow: 0 4px 15px rgba(184, 201, 208, 0.15);
 }
 
 thead {
-    background: #d4b5c5;
-    color: #5a4d4d;
+    background: #b8c9d0;
+    color: #4d4a47;
 }
 
 th, td {
     padding: 0.8rem 1rem;
     text-align: left;
-    border-bottom: 1px solid #f0e5ea;
+    border-bottom: 1px solid #e5eaec;
 }
 
 tbody tr:hover {
-    background: #faf0f5;
+    background: #f0ece8;
 }
 
 .estado {
@@ -291,9 +285,9 @@ tbody tr:hover {
     font-weight: 600;
 }
 
-.estado-pendiente { background: #f5e6b8; color: #6c5b1e; }
-.estado-en_progreso { background: #b8e6e6; color: #0a5c6b; }
-.estado-completada { background: #b8e6c8; color: #0d5e3a; }
+.estado-pendiente { background: #e8d4b8; color: #6c5b1e; }
+.estado-en_progreso { background: #b8d0d4; color: #0a5c6b; }
+.estado-completada { background: #b8d4c4; color: #0d5e3a; }
 
 .acciones {
     display: flex;
@@ -302,14 +296,14 @@ tbody tr:hover {
 
 .sin-datos {
     text-align: center;
-    color: #b8a9c9;
+    color: #8fa8b8;
     padding: 3rem 0;
     font-size: 1.1rem;
 }
 
 footer {
-    background: #d4b5c5;
-    color: #5a4d4d;
+    background: #b8c9d0;
+    color: #4d4a47;
     text-align: center;
     padding: 1rem 0;
     margin-top: 2rem;

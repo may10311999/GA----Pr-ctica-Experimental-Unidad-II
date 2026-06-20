@@ -52,7 +52,7 @@ class AuthController {
                 $errores[] = "El correo electronico ya esta registrado.";
             } else {
                 $usuario->registrar($nombre, $email, $password);
-                $_SESSION['mensaje_exito'] = "Registro exitoso. Inicia sesion.";
+                $_SESSION['mensaje_exito'] = "Cuenta creada con exito. Accede con tus datos.";
                 header("Location: index.php?accion=login");
                 exit;
             }

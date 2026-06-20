@@ -15,7 +15,7 @@ class TareaController {
 
         $titulo = "Mis Tareas";
         ob_start();
-        include __DIR__ . '/../vistas/tareas/index.php';
+        include __DIR__ . '/../vistas/actividades/index.php';
         $contenido = ob_get_clean();
         include __DIR__ . '/../vistas/layout/header.php';
         echo $contenido;
@@ -47,7 +47,7 @@ class TareaController {
 
             $tituloPagina = "Crear Tarea";
             ob_start();
-            include __DIR__ . '/../vistas/tareas/crear.php';
+            include __DIR__ . '/../vistas/actividades/crear.php';
             $contenido = ob_get_clean();
             include __DIR__ . '/../vistas/layout/header.php';
             echo $contenido;
@@ -55,7 +55,7 @@ class TareaController {
         } else {
             $tituloPagina = "Crear Tarea";
             ob_start();
-            include __DIR__ . '/../vistas/tareas/crear.php';
+            include __DIR__ . '/../vistas/actividades/crear.php';
             $contenido = ob_get_clean();
             include __DIR__ . '/../vistas/layout/header.php';
             echo $contenido;
@@ -102,7 +102,7 @@ class TareaController {
 
             $tituloPagina = "Editar Tarea";
             ob_start();
-            include __DIR__ . '/../vistas/tareas/editar.php';
+            include __DIR__ . '/../vistas/actividades/editar.php';
             $contenido = ob_get_clean();
             include __DIR__ . '/../vistas/layout/header.php';
             echo $contenido;
@@ -110,7 +110,7 @@ class TareaController {
         } else {
             $tituloPagina = "Editar Tarea";
             ob_start();
-            include __DIR__ . '/../vistas/tareas/editar.php';
+            include __DIR__ . '/../vistas/actividades/editar.php';
             $contenido = ob_get_clean();
             include __DIR__ . '/../vistas/layout/header.php';
             echo $contenido;

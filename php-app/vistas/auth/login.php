@@ -1,4 +1,4 @@
-<h2>Iniciar Sesion</h2>
+<h2>Acceder</h2>
 
 <form method="POST" action="index.php?accion=login" class="form-auth">
     <?php echo campoCSRF(); ?>
@@ -21,7 +21,7 @@
         <div class="mensaje error"><?php echo sanitizarSalida($error); ?></div>
     <?php endif; ?>
 
-    <button type="submit" class="btn">Iniciar Sesion</button>
+    <button type="submit" class="btn">Acceder</button>
 
-    <p class="enlace-form">¿No tienes cuenta? <a href="index.php?accion=registro">Registrate aqui</a></p>
+    <p class="enlace-form">¿No tienes cuenta? <a href="index.php?accion=registro">Crear Cuenta</a></p>
 </form>

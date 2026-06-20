@@ -1,4 +1,4 @@
-<h2>Crear Nueva Tarea</h2>
+<h2>Nueva Actividad</h2>
 
 <form method="POST" action="index.php?accion=tareas&subaccion=crear" class="form-crud">
     <?php echo campoCSRF(); ?>
@@ -25,7 +25,7 @@
     <?php endif; ?>
 
     <div class="acciones-form">
-        <button type="submit" class="btn">Guardar Tarea</button>
+        <button type="submit" class="btn">Guardar</button>
         <a href="index.php?accion=tareas" class="btn btn-secundario">Cancelar</a>
     </div>
 </form>

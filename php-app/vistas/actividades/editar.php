@@ -1,4 +1,4 @@
-<h2>Editar Tarea</h2>
+<h2>Editar Actividad</h2>
 
 <form method="POST" action="index.php?accion=tareas&subaccion=editar&id=<?php echo (int)$tareaDatos['id']; ?>" class="form-crud">
     <?php echo campoCSRF(); ?>
@@ -34,7 +34,7 @@
     <?php endif; ?>
 
     <div class="acciones-form">
-        <button type="submit" class="btn">Actualizar Tarea</button>
+        <button type="submit" class="btn">Actualizar</button>
         <a href="index.php?accion=tareas" class="btn btn-secundario">Cancelar</a>
     </div>
 </form>

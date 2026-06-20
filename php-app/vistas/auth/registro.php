@@ -1,4 +1,4 @@
-<h2>Registro de Usuario</h2>
+<h2>Crear Cuenta</h2>
 
 <form method="POST" action="index.php?accion=registro" class="form-auth">
     <?php echo campoCSRF(); ?>
@@ -41,7 +41,7 @@
         </div>
     <?php endif; ?>
 
-    <button type="submit" class="btn">Registrarse</button>
+    <button type="submit" class="btn">Crear Cuenta</button>
 
-    <p class="enlace-form">¿Ya tienes cuenta? <a href="index.php?accion=login">Inicia sesion aqui</a></p>
+    <p class="enlace-form">¿Ya tienes cuenta? <a href="index.php?accion=login">Acceder</a></p>
 </form>

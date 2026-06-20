@@ -1,11 +1,11 @@
-<h2>Mis Tareas</h2>
+<h2>Mis Actividades</h2>
 
 <div class="acciones-tabla">
-    <a href="index.php?accion=tareas&subaccion=crear" class="btn">Nueva Tarea</a>
+    <a href="index.php?accion=tareas&subaccion=crear" class="btn">Agregar</a>
 </div>
 
 <?php if (count($tareas) === 0): ?>
-    <p class="sin-datos">No tienes tareas registradas. Crea tu primera tarea.</p>
+    <p class="sin-datos">Aun no hay actividades registradas.</p>
 <?php else: ?>
     <div class="tabla-responsive">
         <table>
@@ -34,7 +34,7 @@
                             <a href="index.php?accion=tareas&subaccion=editar&id=<?php echo (int)$t['id']; ?>" class="btn-small">Editar</a>
                             <a href="index.php?accion=tareas&subaccion=eliminar&id=<?php echo (int)$t['id']; ?>"
                                class="btn-small btn-peligro"
-                               onclick="return confirm('¿Eliminar esta tarea?')">Eliminar</a>
+                               onclick="return confirm('¿Eliminar esta actividad?')">Borrar</a>
                         </td>
                     </tr>
                 <?php endforeach; ?>
